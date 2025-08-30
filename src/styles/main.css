@@ -1,0 +1,41 @@
+/* #region page */
+body {
+  margin: 0;
+}
+
+/* #endregion */
+
+/* #region header */
+.header {
+  box-sizing: border-box;
+  padding: 20px 24px 40px;
+  background-image: url(../images/header-bg-mobile.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* #endregion */
+
+/* #region icon */
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon--phone {
+  background-image: url(../icons/icon-phone.png);
+}
+
+.icon--menu {
+  background-image: url(../icons/icon-burger-menu.png);
+}
+
+/* #endregion */
+
