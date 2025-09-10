@@ -1,0 +1,28 @@
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.icon--phone {
+  background-image: url(../../icons/icon-phone.png);
+}
+
+.icon--menu {
+  background-image: url(../../icons/icon-burger-menu.png);
+}
+
+.icon--close {
+  background-image: url(../../icons/icon-close.png);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
