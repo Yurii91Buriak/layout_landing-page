@@ -42,7 +42,6 @@ h6 {
 /* #region header */
 .header {
   box-sizing: border-box;
-  padding: 20px 24px 40px;
   background-image: url(../images/header-bg-mobile.png);
   height: 100vh;
   background-size: cover;
@@ -53,17 +52,6 @@ h6 {
   justify-content: space-between;
 }
 
-.header__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__icons {
-  display: flex;
-  gap: 24px;
-}
-
 .header__title {
   margin: 0;
   font-weight: 700;
@@ -72,12 +60,35 @@ h6 {
   letter-spacing: 0;
 }
 
+.header__bottom {
+  padding: 0 20px 40px;
+}
+
+/* #endregion */
+
+/* #region top-bar */
+.top-bar {
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar__icons {
+  display: flex;
+  gap: 24px;
+}
+
+.top-bar__logo {
+  display: flex;
+}
+
 /* #endregion */
 
 /* #region menu */
+
 .menu {
   box-sizing: border-box;
-  padding: 20px 24px 40px;
   height: 100vh;
   background-color: #e5e6e8;
   font-weight: 700;
@@ -89,9 +100,11 @@ h6 {
 }
 
 .menu__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-bottom: 32px;
+}
+
+.menu__content {
+  padding-inline: 20px;
 }
 
 .menu__phone-number {
