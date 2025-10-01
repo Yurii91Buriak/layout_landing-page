@@ -45,5 +45,10 @@
   "line-end-style": "lf",
   "attr-new-line": 2,
   "attr-name-style": "dash",
-  "attr-no-unsafe-char": true
+  "attr-no-unsafe-char": true,
+
+  "ignoreFiles": [
+    "dist/**/*.html",
+    "node_modules/**/*.html"
+  ]
 }

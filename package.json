@@ -3,17 +3,13 @@
   "version": "1.0.0",
   "description": "Landing page",
   "scripts": {
-    "init": "mate-scripts init",
-    "start": "mate-scripts start",
+    "clean": "rm -rf .parcel-cache dist",
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html --public-url=.",
     "style-format": "npx stylelint 'src/**/*.scss' --fix --allow-empty-input",
     "format": "prettier --ignore-path .prettierignore --write './src/**/*.{html,css,scss}'",
-    "lint": "npm run style-format && npm run format && mate-scripts lint",
-    "test:only": "mate-scripts test",
-    "build": "mate-scripts build",
-    "deploy": "mate-scripts deploy",
-    "update": "mate-scripts update",
-    "postinstall": "npm run update",
-    "test": "npm run lint && npm run test:only"
+    "lint": "npm run style-format && npm run format",
+    "test": "echo \"No test specified\" && exit 0"
   },
   "keywords": [],
   "author": "Mate Academy",
@@ -23,9 +19,8 @@
     "@mate-academy/eslint-config": "latest",
     "@mate-academy/jest-mochawesome-reporter": "^1.0.0",
     "@mate-academy/linthtml-config": "latest",
-    "@mate-academy/scripts": "^2.1.1",
     "@mate-academy/stylelint-config": "latest",
-    "@parcel/transformer-sass": "^2.12.0",
+    "@parcel/transformer-sass": "^2.16.0",
     "cypress": "^13.13.0",
     "eslint": "^8.57.0",
     "eslint-plugin-cypress": "^3.3.0",
@@ -35,24 +30,12 @@
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0",
-    "parcel": "^2.12.0",
+    "parcel": "^2.16.0",
     "prettier": "^3.3.2",
     "stylelint": "^16.7.0",
     "stylelint-scss": "^6.4.1"
   },
   "browserslist": [
     "last 2 versions"
-  ],
-  "mateAcademy": {
-    "projectType": "layout",
-    "linters": {
-      "javascript": false,
-      "bem": false
-    },
-    "tests": {
-      "jest": false,
-      "backstop": false,
-      "cypress": true
-    }
-  }
+  ]
 }
