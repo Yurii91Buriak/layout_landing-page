@@ -1,59 +1,37 @@
 <!-- #region head -->
 <!doctype html>
-<html
-  lang="en"
-  class="page"
->
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bose</title>
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin="anonymous"
-    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Space+Mono&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="./styles/main.scss"
-    />
-    <script
-      src="scripts/main.js"
-      defer
-    ></script>
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <script src="scripts/main.js" defer></script>
   </head>
   <!-- #endregion -->
+
   <body class="page__body">
     <!-- #region header -->
     <header class="header">
       <div class="top-bar">
-        <a href="#" class="top-bar__logo">
+        <a href="#" class="top-bar__logo-link">
           <img
             src="./images/logo.png"
             alt="Bose logo"
-            class="logo"
+            class="top-bar__logo"
           />
         </a>
+
         <div class="top-bar__icons">
-          <a
-            href="#"
-            class="icon icon--phone"
-          ></a>
-          <a
-            href="#menu"
-            class="icon icon--menu"
-          ></a>
+          <a href="#" class="icon icon--phone"></a>
+          <a href="#menu" class="icon icon--menu"></a>
         </div>
       </div>
 
@@ -64,115 +42,66 @@
     <!-- #endregion -->
 
     <!-- #region menu -->
-    <aside
-      class="page__menu menu"
-      id="menu"
-    >
+    <aside class="page__menu menu" id="menu">
       <div class="top-bar menu__top">
-        <a href="#" class="top-bar__logo">
+        <a href="#" class="top-bar__logo-link">
           <img
-              src="./images/logo.png"
-              alt="Bose logo"
-              class="logo"
-            />
+            src="./images/logo.png"
+            alt="Bose logo"
+            class="top-bar__logo"
+          />
         </a>
-        <a
-            href="#"
-            class="icon icon--close"
-          ></a>
+
+        <a href="#" class="icon icon--close"></a>
       </div>
 
       <div class="menu__content">
         <nav class="nav menu__nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a
-                class="nav__link"
-                href="#products"
-              >
-                Products
-              </a>
+              <a class="nav__link" href="#products">Products</a>
             </li>
             <li class="nav__item">
-              <a
-                class="nav__link"
-                href="#store"
-              >
-                Store
-              </a>
+              <a class="nav__link" href="#store">Store</a>
             </li>
             <li class="nav__item">
-              <a
-                class="nav__link"
-                href="#about"
-            >
-              About
-              </a>
+              <a class="nav__link" href="#about">About</a>
             </li>
             <li class="nav__item">
-              <a
-                class="nav__link"
-                href="#contacts"
-              >
-                Contact
-              </a>
+              <a class="nav__link" href="#contacts">Contact</a>
             </li>
             <li class="nav__item">
-              <a
-                class="nav__link"
-                href="#cart"
-              >
-                Cart(0)
-              </a>
+              <a class="nav__link" href="#cart">Cart(0)</a>
             </li>
           </ul>
         </nav>
 
-        <a
-          class="menu__phone-number"
-          href="tel:+12345555555"
-        >
+        <a class="menu__phone-number" href="tel:+12345555555">
           +1 234 5555-55-55
         </a>
 
-        <a
-        class="menu__call-to-order"
-        href="tel:+12345555555"
-      >
-        Call to order
+        <a class="menu__call-to-order" href="tel:+12345555555">
+          Call to order
         </a>
       </div>
     </aside>
-
-    <!-- #endregion-->
+    <!-- #endregion -->
 
     <!-- #region main -->
     <main class="main">
-      <section
-        class="recommended"
-        id="products"
-      >
+      <section class="recommended" id="products">
         <h2>Recommended</h2>
       </section>
 
-      <section
-        class="categories"
-        id="store"
-      >
-        <h2>Browse Nothing products by category</h2>
+      <section class="categories" id="store">
+        <h2>Browse Bose products by category</h2>
       </section>
 
-      <section
-        class="about-us"
-        id="about"
-      >
+      <section class="about-us" id="about">
         <h2>About us</h2>
       </section>
 
-      <section
-        class="contacts"
-        id="contacts"
-      >
+      <section class="contacts" id="contacts">
         <h2>Contact us</h2>
       </section>
     </main>
