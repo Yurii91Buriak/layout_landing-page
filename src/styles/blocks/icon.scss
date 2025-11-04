@@ -8,24 +8,36 @@
 
   @include hover (transform, scale(1.2));
 
-  @include onTablet {
+    @include onTablet {
     height: 32px;
     width: 32px;
   }
 
   &--phone {
-  background-image: url(../icons/icon-phone-x2.png);
-}
+    background-image: url("../icons/icon-phone-mobile.png");
 
-&--menu {
-  background-image: url(../icons/icon-burger-menu-x2.png);
+    @include onTablet {
+      background-image: url("../icons/icon-phone-desktop.png");
+    }
+  }
+
+  &--menu {
+    background-image: url("../icons/icon-menu-mobile.png");
 
     &:hover {
-    background-image: url(../icons/icon-burger-menu-hover.png);
-  }
-}
+      background-image: url("../icons/icon-menu-hover.png");
+    }
 
-&--close {
-  background-image: url(../icons/icon-close-x2.png);
+    @include onTablet {
+      background-image: url("../icons/icon-menu-desktop.png");
+    }
+  }
+
+  &--close {
+    background-image: url("../icons/icon-close-mobile.png");
+
+    @include onTablet {
+      background-image: url("../icons/icon-close-desktop.png");
+    }
   }
 }

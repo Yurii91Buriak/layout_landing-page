@@ -1,5 +1,5 @@
 .top-bar {
-  padding-block: 20px;
+  padding-block: 28px;
   @include contentPaddingInline;
 
   display: flex;
@@ -7,17 +7,13 @@
   align-items: center;
 
   @include onTablet {
-    padding-block: 72px;
-  }
-
-    @include onDesktop {
-    padding-block: 120px;
+    padding-block: 36px;
   }
 
   &__icons {
     display: flex;
     gap: 24px;
-    
+
     @include onTablet {
       gap: 32px;
     }
