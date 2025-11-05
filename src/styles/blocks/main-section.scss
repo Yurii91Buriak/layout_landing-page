@@ -9,6 +9,16 @@
     @include onTablet {
       padding-top: 120px;
     }
+}
+
+  &__products {
+    display: grid;
+    row-gap: 40px;
+
+    @include onDesktop {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 24px;
+    }
   }
 
   &__categories {
