@@ -3,8 +3,15 @@
   font-size: 16px;
   line-height: 140%;
   color: $main-text-color;
-
   scroll-behavior: smooth;
+
+    @include onTablet {
+    font-size: 16px; // tablet
+  }
+
+    @include onDesktop {
+    font-size: 18px; // desktop
+  }
 
   &__body {
     margin: 0;
