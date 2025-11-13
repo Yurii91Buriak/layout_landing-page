@@ -13,11 +13,17 @@
 
   &__products {
     display: grid;
+    grid-template-columns: 1fr;
     row-gap: 40px;
+
+    @include onTablet {
+      row-gap: 56px;
+    }
 
     @include onDesktop {
       grid-template-columns: repeat(3, 1fr);
       column-gap: 24px;
+      row-gap: 0;
     }
   }
 
