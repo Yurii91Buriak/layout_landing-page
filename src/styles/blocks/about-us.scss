@@ -1,0 +1,82 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 48px;
+  @include contentPaddingInline;
+
+  @include onTablet {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 24px;
+    row-gap: 0;
+    margin-top: 56px;
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    row-gap: 0;
+    margin-top: 56px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: $main-text-color;
+
+    @include onTablet {
+      grid-column: 1 / 4;
+      font-size: 40px;
+      line-height: 100%;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 7;
+      font-size: 48px;
+      line-height: 48px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include onTablet {
+      grid-column: 4 / 7;
+      grid-row: 1;
+    }
+
+    @include onDesktop {
+      grid-column: 7 / 13;
+      grid-row: 1;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0;
+    color: $main-text-color;
+
+    &:nth-child(2) {
+      margin-top: 24px;
+    }
+
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+
+    &:nth-child(4) {
+      margin-top: 24px;
+    }
+  }
+}
+
