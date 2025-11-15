@@ -4,12 +4,17 @@
   background-color: #e5e6e8;
   font-weight: 700;
   text-transform: capitalize;
+  overflow: auto;
 
   &__nav {
     margin-bottom: 48px;
   }
 
   &__top {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #e5e6e8;
     margin-bottom: 32px;
   }
 

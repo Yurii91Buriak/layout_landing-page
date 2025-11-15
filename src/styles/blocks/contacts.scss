@@ -184,8 +184,10 @@
     line-height: 140%;
     color: $main-text-color;
     text-decoration: none;
+    transition: color $effectDuration ease;
 
     &:hover {
+      color: #1f1f1f;
       text-decoration: underline;
     }
   }
@@ -198,5 +200,12 @@
     line-height: 140%;
     color: $main-text-color;
     font-style: normal;
+    text-decoration: none;
+    transition: color $effectDuration ease;
+    display: inline-block;
+
+    &:hover {
+      color: #1f1f1f;
+    }
   }
 }

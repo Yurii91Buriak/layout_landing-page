@@ -44,24 +44,28 @@
     object-fit: cover;
     border-radius: 4px;
     display: block;
-    grid-column: span 2;
+    grid-column: span 4;
 
-    &:first-child {
-      @include onTablet {
+    @include onTablet {
+      grid-column: span 2;
+
+      &:first-child {
         grid-column: span 5;
       }
 
-      @include onDesktop {
-        grid-column: span 8;
+      &:last-child {
+        grid-column: span 3;
       }
     }
 
-    &:last-child {
-      @include onTablet {
-        grid-column: span 3;
+    @include onDesktop {
+      grid-column: span 2;
+
+      &:first-child {
+        grid-column: span 8;
       }
 
-      @include onDesktop {
+      &:last-child {
         grid-column: span 4;
       }
     }
