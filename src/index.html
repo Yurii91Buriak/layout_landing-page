@@ -205,8 +205,53 @@
         </div>
       </section>
 
-      <section class="main-section__contacts" id="contacts">
-        <h2 class="section-title">Contact us</h2>
+      <section class="main-section__contacts contacts" id="contacts">
+        <h2 class="contacts__title">Contact us</h2>
+
+        <form class="contacts__form">
+          <input
+            type="text"
+            class="contacts__input"
+            placeholder="Name"
+            name="name"
+          />
+
+          <input
+            type="email"
+            class="contacts__input"
+            placeholder="Email"
+            name="email"
+          />
+
+          <textarea
+            class="contacts__textarea"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+
+          <button type="submit" class="contacts__button">Send</button>
+        </form>
+
+        <div class="contacts__info">
+          <div class="contacts__info-item">
+            <p class="contacts__label">Phone</p>
+            <a href="tel:+12345555555" class="contacts__link">+1 234 5555-55-55</a>
+          </div>
+
+          <div class="contacts__info-item">
+            <p class="contacts__label">Email</p>
+            <a href="mailto:hello@nothing.com" class="contacts__link">hello@nothing.com</a>
+          </div>
+
+          <div class="contacts__info-item">
+            <p class="contacts__label">Address</p>
+            <address class="contacts__address">
+              400 first ave.<br>
+              suite 700<br>
+              Minneapolis, MN 55401
+            </address>
+          </div>
+        </div>
       </section>
     </main>
     <!-- #endregion -->

@@ -7,10 +7,6 @@
     gap: 56px;
   }
 
-  @include onDesktop {
-    gap: 56px;
-  }
-
   &__group {
     display: flex;
     flex-direction: column;

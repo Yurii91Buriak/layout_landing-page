@@ -39,24 +39,4 @@
       padding-top: 128px;
     }
   }
-
-  &__about-us {
-    padding-top: 48px;
-    @include contentPaddingInline;
-
-    @include onTablet {
-      padding-top: 56px;
-    }
-  }
-
-  &__contacts {
-    margin-top: 104px;
-    padding-bottom: 64px;
-    @include contentPaddingInline;
-
-    @include onTablet {
-    margin-top: 120px;
-    padding-bottom: 120px;
-    }
-  }
 }
