@@ -45,6 +45,7 @@
     border-radius: 4px;
     display: block;
     grid-column: span 4;
+    transition: transform $effectDuration ease;
 
     @include onTablet {
       grid-column: span 2;
@@ -69,6 +70,10 @@
         grid-column: span 4;
       }
     }
+  }
+
+  &__photo:hover {
+    transform: scale(1.05);
   }
 
   &__group:nth-child(1) &__photo {

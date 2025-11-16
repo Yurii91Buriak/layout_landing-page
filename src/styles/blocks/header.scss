@@ -2,7 +2,7 @@
   box-sizing: border-box;
   background-image: url(../images/header-bg-mobile.png);
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
   background-size: cover;
   height: 100vh;
 
@@ -16,7 +16,6 @@
 
   @include onDesktop {
     background-image: url(../images/header-bg-desktop.png);
-    position: relative; // establish positioning context for precise title placement
   }
 
   &__title {
@@ -50,8 +49,8 @@
         @include onDesktop {
       padding: 0;
       position: absolute;
-      top: 516px; // exact top offset from mockup
-      left: 120px; // matches desktop content padding
+      top: 516px;
+      left: 120px;
     }
   }
 }

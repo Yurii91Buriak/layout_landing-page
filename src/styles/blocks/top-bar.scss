@@ -32,4 +32,32 @@
       height: 24px;
     }
   }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    position: relative;
+  }
+
+  &__phone-number {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $main-text-color;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity $effectDuration ease, transform $effectDuration ease;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  &__phone:hover &__phone-number {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
