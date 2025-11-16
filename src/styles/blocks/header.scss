@@ -16,6 +16,7 @@
 
   @include onDesktop {
     background-image: url(../images/header-bg-desktop.png);
+    position: relative; // establish positioning context for precise title placement
   }
 
   &__title {
@@ -26,25 +27,31 @@
   line-height: 100%;
   letter-spacing: 0;
   color: $main-text-color;
+  max-width: 280px;
 
     @include onTablet {
       font-size: 48px;
+      max-width: 392px;
     }
 
     @include onDesktop {
       font-size: 56px;
+      max-width: 498px;
     }
   }
 
   &__bottom {
-    padding: 40px;
+    padding: 48px;
     @include contentPaddingInline;
 
     @include onTablet {
-      padding-bottom: 65px;
+      padding-bottom: 96px;
     }
         @include onDesktop {
-      padding-bottom: 92px;
+      padding: 0;
+      position: absolute;
+      top: 516px; // exact top offset from mockup
+      left: 120px; // matches desktop content padding
     }
   }
 }
