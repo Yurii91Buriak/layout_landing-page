@@ -41,7 +41,7 @@
     position: relative;
   }
 
-  &__phone-number {
+  &__phone--number {
     font-family: 'Space Mono', monospace;
     font-weight: 700;
     font-size: 12px;
@@ -56,7 +56,7 @@
     pointer-events: none;
   }
 
-  &__phone:hover &__phone-number {
+  &__phone:hover &__phone--number {
     opacity: 1;
     transform: translateX(0);
   }
