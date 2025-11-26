@@ -48,10 +48,8 @@
     }
 
     @include onDesktop {
-      padding: 0;
-      position: absolute;
-      top: 540px;
-      left: 120px;
+      padding-inline: 120px;
+      padding-bottom: 120px;
     }
   }
 }
